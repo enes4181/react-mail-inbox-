@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "../../styles.css";
 
 function MessagePage() {
-  const { mails, ShowMail, isReadMail, ReadingMail, kullanici } =useMail();
+  const { mails, ShowMail, isReadMail, ReadingMail, user } =useMail();
   useEffect(() => {
     ReadingMail();
   });
@@ -14,7 +14,7 @@ function MessagePage() {
     <div className="messageDiv">
      
       <h1 className="messageh1">
-        {kullanici.toUpperCase()} has {isReadMail} unread messages{" "}
+        {user.toUpperCase()} has {isReadMail} unread messages{" "}
       </h1>
       <div className="h1">Message</div>
 

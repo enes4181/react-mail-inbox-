@@ -4,7 +4,7 @@ import axios from "axios";
 const MailContext = createContext();
 
 export const MailProvider = ({ children }) => {
-  const [kullanici, setKullanici] = useState("ahmet");
+  const [user, setUser] = useState("enes");
   const [showedMail, setShowedMail] = useState([]);
   const [isReadMail, setIsReadMail] = useState(0);
   const [mails, setMails] = useState([]);
@@ -13,7 +13,7 @@ export const MailProvider = ({ children }) => {
     const fetchMails = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/mails/message?user=${kullanici}`
+          `http://localhost:5000/mails/message?user=${user}`
         );
         setMails(response.data);
       } catch (err) {
@@ -21,18 +21,18 @@ export const MailProvider = ({ children }) => {
       }
     };
     fetchMails();
-  }, [kullanici]);
+  }, [user]);
 
   const ReadingMail = () => {
-    let unread = 0;
+    let read = 0;
 
     mails.map((mail) => {
       if (mail.isRead === false) {
-        unread = unread + 1;
+        read = read + 1;
       }
       return mail;
     });
-    setIsReadMail(unread);
+    setIsReadMail(read);
   };
   const ShowMail = (id) => {
     const cloned_mails = [...mails];
@@ -73,8 +73,8 @@ export const MailProvider = ({ children }) => {
     ShowMail,
     changeRead,
     showedMail,
-    kullanici,
-    setKullanici,
+    user,
+    setUser,
   };
   return <MailContext.Provider value={values}>{children}</MailContext.Provider>;
 };
