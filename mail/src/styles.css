@@ -1,0 +1,147 @@
+html,
+body{
+    margin: 0;
+	padding: 0;
+    background-color:#ADD8E6;
+}
+.homeContainer{
+    display: grid;
+    background-color: #ADD8E6;
+    padding: 10px;
+    grid-template-columns: 400px;
+    grid-template-rows: 200px 250px 250px;
+}
+.homeItem{
+    font-size: 30px;
+    color: black;
+   background-color: #ADD8E6;
+    padding: 150px;
+    
+    width: 1000px;
+    height: 200px;
+    
+    position: relative;
+    margin: auto;  
+}
+.homeItem2{
+    margin-left: 200px;
+}
+.label1{
+   
+    font-weight: bold;
+}
+
+
+body {
+	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   
+	background: #f5f5f5;
+	color: #4d4d4d;
+	min-width: 230px;
+	max-width: 550px;
+	margin: 0 500px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-weight: 300;
+}
+.messageDiv{
+    background-color:#ADD8E6;
+}
+.mail-list {
+    
+    padding: 2%;
+    width: 1000px;
+	list-style: none;
+    border: solid 3px;
+    background-color: aquamarine;
+    
+}
+
+.mail-list li {
+   
+	position: relative;
+	font-size: 24px; 
+    
+}
+.mail-list li:first-child{
+	position: relative;
+	font-size: 24px; 
+    
+     
+}
+
+.inboxpage {
+    text-decoration: none;
+    list-style-type:none;
+    color: black;
+    margin: 5px;
+}
+
+.h3{
+    margin: 4px;
+    font-size:25px;
+}
+.mailInbox-list{
+	background-color:tomato;
+	position: relative;
+   padding: 5%;
+    width: 1000px;
+	list-style: none;
+    border: solid 3px;
+    background-color: aquamarine;
+}
+.mailInbox-list li {   
+	font-size: 28px;
+	
+}
+.inboxdiv{
+    position: relative;
+    top: 50px;	
+ 
+}
+.h1{
+    color: black;
+    font-size: 50px;
+    height: 100px;
+    font-weight: bold;
+
+    
+}
+.hr {
+    border: 1px solid black;
+    width:23%;
+    text-align:left;
+    margin-left:0
+    
+}
+
+.button {
+    transition-duration: 0.4s;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    font-size: medium;
+    border: 1px solid;
+    
+  }
+  
+  .button:hover {
+    background-color: #7FFFD4; /* Green */
+    color: white;
+  }
+  .messageh1{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    
+  }
+  .messageDiv{
+    background-color:#ADD8E6;
+}
+  .read{
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+    
+  }
+
